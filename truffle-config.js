@@ -1,14 +1,16 @@
 module.exports = {
+  contracts_build_directory: "./public/contracts",
   networks: {
     development: {
-      host: "127.0.0.1",
-      port: 7545,
-      network_id: "*",
+      host: "127.0.0.1", // Localhost (default: none)
+      port: 7545, // Standard Ethereum port (default: none)
+      network_id: "*", // Any network (default: none)
     },
   },
+
   compilers: {
     solc: {
-      version: "0.5.1", //"0.8.21"
+      version: "0.8.4",
     },
   },
 };
